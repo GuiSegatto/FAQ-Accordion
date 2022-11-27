@@ -9,7 +9,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 12px;
     background: rgb(175,103,233);
     background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
     background-repeat: no-repeat;
@@ -45,6 +45,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 /* Images */
 .mobileImgContainer {
     width: 100%;
@@ -73,7 +74,6 @@ h1 {
 }
 
 /* Accordion */
-
 .accordionContainer {
     width: 100%;
     padding: 20px;
@@ -83,6 +83,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+}
+
+.accordionItem {
+    border-bottom:1px hsl(240, 5%, 91%) solid;
+    padding: 10px 0;
 }
 
 .arrow {
@@ -98,6 +103,11 @@ h1 {
 
 .active {
     padding-bottom: 10px;
+}
+
+.activeBold{
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
 }
 
 .arrowRotate {
