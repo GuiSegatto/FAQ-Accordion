@@ -16,7 +16,7 @@ body {
     height: 100vh;
 }
 
-h1, .active{
+h1, .activeBold{
    color: hsl(238, 29%, 16%);
    font-family: 'Kumbh Sans', sans-serif; 
    font-weight: 700;
@@ -28,6 +28,9 @@ p {
     font-weight: 400;
 }
 
+
+
+/* Main Content */
 main {
     height: 100vh;
     width: 100vw;
@@ -44,39 +47,49 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 3px 41px 112px -34px rgba(0,0,0,0.75);
 }
+
+
 
 /* Images */
 .mobileImgContainer {
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin: 0 0 50px;
+    flex-direction: column;
+    align-items: center;
+    margin: -34% 0 230px;
+    position: relative;
 }
 
 .mobileIllustration {
-    width: 65%;
+    width: 75%;
     position: absolute;
-    top: 200px;
     z-index: 2;
 }
 
 .mobilePattern {
     position: absolute;
-    width: 65%;
-    top: 350px;
+    margin-top: 35%;
+    width: 75%;
     z-index: 1;
 }
 
+
+
 /* Text */
 h1 {
-    margin: 25px;
+    margin:20px;
+    padding-top: 0;
+    font-size: 32px;
 }
+
+
 
 /* Accordion */
 .accordionContainer {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px 45px;
 }
 
 .accordionHeader {
@@ -99,15 +112,18 @@ h1 {
     transition: all .5s ease;
     height: 0;
     overflow: hidden;
+    padding: 12px 35px 0 0;
 }
 
+.accordionTextHeader {
+    font-size: 14px;
+}
+
+
+
+/* Actived Accordion */
 .active {
     padding-bottom: 10px;
-}
-
-.activeBold{
-    color: hsl(237, 12%, 33%);
-    font-weight: 700;
 }
 
 .arrowRotate {
