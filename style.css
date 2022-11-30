@@ -56,7 +56,6 @@ footer {
     padding-bottom: 10px;
 }
 
-
 .mainContainer {
     background-color: hsl(0, 0%, 100%);
     width: 100%;
@@ -188,18 +187,18 @@ h1 {
         width: 55%;
         position: relative;
     }
-    
+
 
     .desktopIllustrationContainer {
-        overflow: hidden; 
-        position: relative; 
-        height: 100%; 
+        overflow: hidden;
+        position: relative;
+        height: 100%;
         display: flex;
     }
 
     .desktopIllustration {
-        position: relative; 
-        margin: auto; 
+        position: relative;
+        margin: auto;
         right: 19%;
         z-index: 2;
     }
