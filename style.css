@@ -40,11 +40,9 @@ p {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-
 .attribution a {
     color: hsl(25, 100%, 61%);
 }
-
 
 /* Main Content */
 main {
@@ -55,7 +53,9 @@ main {
 
 footer {
     margin-top: auto;
+    padding-bottom: 10px;
 }
+
 
 .mainContainer {
     background-color: hsl(0, 0%, 100%);
@@ -69,8 +69,6 @@ footer {
     max-width: 350px;
     margin-top: 25vh;
 }
-
-
 
 /* Images */
 .mobileImgContainer {
@@ -177,8 +175,6 @@ h1 {
         max-width: 932px;
         height: 480px;
     }
-
-
 
     /* Images */
     .mobileImgContainer {
