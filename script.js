@@ -5,7 +5,8 @@ accordionItems.forEach((accordion) => {
     
     accordionHeaderItem.addEventListener("click", () => {
         const accordionContentItem = accordion.querySelector(".accordionContent");
-
+        const itemActived =  document.querySelector(".active");
+        
         verifyActive(accordion, accordionContentItem, itemActived);
     });
 });
@@ -14,7 +15,7 @@ function verifyActive(accordion, content, contentActived) {
     const iconItem = accordion.querySelector(".arrow");
     const iconItemActived = document.querySelectorAll(".arrow");
 
-    const itemText = accordion.querySelector(".accordionTextHeader")
+    const itemText = accordion.querySelector(".accordionTextHeader");
     const textActived = document.querySelectorAll(".accordionTextHeader");
 
     iconItemActived.forEach((item) => (item.classList.remove("arrowRotate")));
