@@ -95,6 +95,10 @@ footer {
     z-index: 1;
 }
 
+.desktopImgContainer {
+    display: none;
+}
+
 
 
 /* Text */
@@ -102,6 +106,7 @@ h1 {
     margin: 20px;
     padding-top: 0;
     font-size: 32px;
+    text-align: center;
 }
 
 
@@ -152,3 +157,85 @@ h1 {
 
 
 /* Media Queries */
+
+
+@media only screen and (max-width: 350px) {
+
+    .accordionTextHeader {
+        font-size: 12px;
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+    /* Main */
+    .mainContainer {
+        flex-direction: row;
+        max-width: 932px;
+        height: 480px;
+    }
+
+
+
+    /* Images */
+    .mobileImgContainer {
+        display: none;
+    }
+
+    .desktopImgContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 55%;
+        position: relative;
+    }
+    
+
+    .desktopIllustrationContainer {
+        overflow: hidden; 
+        position: relative; 
+        height: 100%; 
+        display: flex;
+    }
+
+    .desktopIllustration {
+        position: relative; 
+        margin: auto; 
+        right: 19%;
+        z-index: 2;
+    }
+
+    .desktopPattern {
+        z-index: 1;
+        position: absolute;
+        right: 23%;
+        margin-top: -60%;
+    }
+
+
+    .desktopImgBox {
+        z-index: 3;
+        position: absolute;
+        bottom: 21%;
+        right: 80.7%;
+    }
+
+    /* Accordion */
+    h1 {
+        text-align: left;
+        margin: 0 0 10%;
+    }
+
+    .accordionContainer {
+        width: 45%;
+        height: 100%;
+        padding: 6% 10% 10% 0;
+    }
+
+    .accordionItem {
+        padding: 15px 0 5px;
+    }
+}
