@@ -238,4 +238,8 @@ h1 {
     .accordionItem {
         padding: 15px 0 5px;
     }
+
+    .accordionTextHeader:hover {
+        color: hsl(32, 100%, 50%)
+    }
 }
